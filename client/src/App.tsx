@@ -9,7 +9,7 @@ import { privateRoutes, publicRoutes } from 'routes';
 
 function App() {
   return (
-    <AppContainer>
+    <AppContainer className="animated-gradient-bg">
       <Suspense fallback={<div>Loading...</div>}>
         <Switch>
           {privateRoutes.map(({ component, ...options }) => (

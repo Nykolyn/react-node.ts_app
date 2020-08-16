@@ -21,7 +21,8 @@
     "redux": "^4.0.5",
     "styled-components": "^5.1.1",
     "styled-system": "^5.1.5",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.2",
+    "yup": "^0.29.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -46,6 +47,7 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.2",
-    "@types/styled-system": "^5.1.10"
+    "@types/styled-system": "^5.1.10",
+    "@types/yup": "^0.29.5"
   }
 }

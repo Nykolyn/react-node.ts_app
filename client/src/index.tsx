@@ -2,6 +2,7 @@ import React from 'react';
 import 'normalize.css';
 import ReactDOM from 'react-dom';
 import { ThemeProvider } from '@material-ui/core';
+import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
 
@@ -9,6 +10,7 @@ import * as serviceWorker from './serviceWorker';
 import store from 'redux/store';
 import App from './App';
 import theme from 'styles/theme';
+import styledTheme from 'styles/styledTheme';
 import 'styles/main.scss';
 
 ReactDOM.render(
@@ -16,7 +18,9 @@ ReactDOM.render(
     <Router>
       <Provider store={store}>
         <ThemeProvider theme={theme}>
-          <App />
+          <StyledThemeProvider theme={styledTheme}>
+            <App />
+          </StyledThemeProvider>
         </ThemeProvider>
       </Provider>
     </Router>
