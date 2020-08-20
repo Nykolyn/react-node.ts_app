@@ -16,3 +16,8 @@ export interface ISteamUser extends Document {
   creator: IUser['_id'];
   steamId: string;
 }
+
+export interface ISignUpUserData {
+  user: IUser;
+  confirmToken: string;
+}

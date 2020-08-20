@@ -16,6 +16,7 @@ const userSchema: Schema = new Schema({
     {
       type: Schema.Types.ObjectId,
       ref: 'SteamUser',
+      default: [],
     },
   ],
 });
